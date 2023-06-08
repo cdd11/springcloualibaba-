@@ -1,0 +1,13 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      username: nacos
+      password: nacos
+  config:
+    import:
+      - optional:nacos:nacos-config.yaml
